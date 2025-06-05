@@ -33,7 +33,7 @@
 
       if (data.length > 0) {
         const cert = data[0];
-        if (cert.Status === "Valid") {
+        if (cert.Status === "Verified") {
           resultBox.innerHTML = `
             ✅ This certificate is issued to <strong>${cert.Name}</strong> for the <strong>${cert.Course}</strong> course on <strong>${cert["Issued Date"]}</strong>.
           `;
