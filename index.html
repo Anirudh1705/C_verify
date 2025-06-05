@@ -33,10 +33,9 @@
 
       if (data.length > 0) {
         const cert = data[0];
-        if (cert.Status === "Verified") {
-          resultBox.innerHTML = `resultBox.innerHTML = `✅ The integrity of Certificate <strong>${certID}</strong> for <strong>${cert.Name}</strong> has been successfully verified and issued on <strong>${cert["Issued Date"]}</strong>. This certificate is authentic and recognized by <strong>Ardent Pixels</strong>.
-          `;
-        } else {
+        if (cert.Status === "Verified") 
+          resultBox.innerHTML = `✅ The integrity of Certificate <strong>${certID}</strong> for <strong>${cert.Name}</strong> has been successfully verified and issued on <strong>${cert["Issued Date"]}</strong>. This certificate is authentic and recognized by <strong>Ardent Pixels</strong>.`;
+         else {
           resultBox.innerHTML = `
             ⚠️ This certificate was found, but its status is "<strong>${cert.Status}</strong>" and is not considered valid.
           `;
